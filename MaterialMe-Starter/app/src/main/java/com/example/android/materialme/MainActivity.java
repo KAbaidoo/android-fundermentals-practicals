@@ -18,10 +18,11 @@ package com.example.android.materialme;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Get the data.
         initializeData();
+
 
         ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(ItemTouchHelper.LEFT|ItemTouchHelper.RIGHT|ItemTouchHelper.UP|ItemTouchHelper.DOWN,ItemTouchHelper.LEFT|ItemTouchHelper.RIGHT) {
             @Override
@@ -104,4 +106,8 @@ public class MainActivity extends AppCompatActivity {
         mAdapter.notifyDataSetChanged();
     }
 
+    public void resetSports(View view) {
+        // Get the data.
+        initializeData();
+    }
 }

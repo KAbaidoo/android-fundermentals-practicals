@@ -17,7 +17,8 @@
 package com.example.android.materialme;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import android.content.Intent;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +32,7 @@ import java.util.ArrayList;
 /***
  * The adapter class for the RecyclerView, contains the sports data.
  */
-class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
+class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder> {
 
     // Member variables.
     private ArrayList<Sport> mSportsData;
@@ -41,7 +42,7 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
      * Constructor that passes in the sports data and the context.
      *
      * @param sportsData ArrayList containing the sports data.
-     * @param context Context of the application.
+     * @param context    Context of the application.
      */
     SportsAdapter(Context context, ArrayList<Sport> sportsData) {
         this.mSportsData = sportsData;
@@ -52,8 +53,8 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
     /**
      * Required method for creating the viewholder objects.
      *
-     * @param parent The ViewGroup into which the new View will be added
-     *               after it is bound to an adapter position.
+     * @param parent   The ViewGroup into which the new View will be added
+     *                 after it is bound to an adapter position.
      * @param viewType The view type of the new View.
      * @return The newly created ViewHolder.
      */
@@ -67,7 +68,7 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
     /**
      * Required method that binds the data to the viewholder.
      *
-     * @param holder The viewholder into which the data should be put.
+     * @param holder   The viewholder into which the data should be put.
      * @param position The adapter position.
      */
     @Override
@@ -94,7 +95,7 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
     /**
      * ViewHolder class that represents each row of data in the RecyclerView.
      */
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         // Member Variables for the TextViews
         private TextView mTitleText;
@@ -113,14 +114,28 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             mTitleText = itemView.findViewById(R.id.title);
             mInfoText = itemView.findViewById(R.id.subTitle);
             mSportsImage = itemView.findViewById(R.id.sportsImage);
+
+            // Set the OnClickListener to the entire view.
+            itemView.setOnClickListener(this);
+
         }
 
-        void bindTo(Sport currentSport){
+        void bindTo(Sport currentSport) {
             // Populate the textviews with data.
             mTitleText.setText(currentSport.getTitle());
             mInfoText.setText(currentSport.getInfo());
             Glide.with(mContext).load(currentSport.getImageResource()).into(mSportsImage);
 
+        }
+
+        @Override
+        public void onClick(View view) {
+            Sport currentSport = mSportsData.get(getAdapterPosition());
+            Intent detailIntent = new Intent(mContext, DetailActivity.class);
+            detailIntent.putExtra("title", currentSport.getTitle());
+            detailIntent.putExtra("image_resource",
+                    currentSport.getImageResource());
+            mContext.startActivity(detailIntent);
         }
     }
 }

@@ -15,6 +15,7 @@
   limitations under the License.
   -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,10 +25,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.materialme.MainActivity">
 
-    <android.support.v7.widget.RecyclerView
+
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addNewItemFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_refresh"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        android:tint="@android:color/white"
+        android:onClick="resetSports"/>
+
+
 
 </RelativeLayout>
