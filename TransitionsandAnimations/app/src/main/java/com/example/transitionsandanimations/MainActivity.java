@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     public void openWithExplode(View view) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
 ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this,
@@ -38,8 +37,6 @@ ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitio
         // Now we can start the Activity, providing the activity options as a bundle
         ActivityCompat.startActivity(MainActivity.this, intent, activityOptions.toBundle());
         // END_INCLUDE(start_activity)
-
-
 
     }
 }
