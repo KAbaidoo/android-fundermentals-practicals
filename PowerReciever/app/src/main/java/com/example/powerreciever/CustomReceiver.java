@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.widget.Toast;
 
 public class CustomReceiver extends BroadcastReceiver {
-    private static final String ACTION_CUSTOM_BROADCAST = BuildConfig.APPLICATION_ID + "ACTION_CUSTOM_BROADCAST";
+    private static final String ACTION_CUSTOM_BROADCAST = BuildConfig.APPLICATION_ID + ".ACTION_CUSTOM_BROADCAST";
 
     @Override
     public void onReceive(Context context, Intent intent) {

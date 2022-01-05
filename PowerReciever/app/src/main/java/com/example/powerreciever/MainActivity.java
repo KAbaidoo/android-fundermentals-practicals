@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String ACTION_CUSTOM_BROADCAST = BuildConfig.APPLICATION_ID + "ACTION_CUSTOM_BROADCAST";
+    private static final String ACTION_CUSTOM_BROADCAST = BuildConfig.APPLICATION_ID + ".ACTION_CUSTOM_BROADCAST";
 
 CustomReceiver mReceiver = new CustomReceiver();
 
