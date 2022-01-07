@@ -20,6 +20,7 @@ private TextView user_textview;
         // Re-created activities receive the same MyViewModel instance created by the first activity.
 
         MyViewModel model = new ViewModelProvider(this).get(MyViewModel.class);
+
         model.getUsers().observe(this,users -> {
             // update UI
         user_textview.setText(users.get(0).getName());
