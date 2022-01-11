@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -41,20 +40,48 @@
             android:checked="true"
             android:text="@string/wifi"/>
     </RadioGroup>
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Schedule Job"
-    android:onClick="scheduleJob"
-    android:layout_gravity="clip_horizontal"
-    android:layout_margin="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/requires"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_idle"
+            android:id="@+id/idleSwitch"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/device_charging"
+            android:id="@+id/chargingSwitch"/>
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cancel Job"
+        android:text="@string/schedule_job"
+        android:onClick="scheduleJob"
+        android:layout_gravity="clip_horizontal"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_job"
         android:onClick="cancelJobs"
         android:layout_gravity="clip_horizontal"
         android:layout_margin="4dp"/>
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>
