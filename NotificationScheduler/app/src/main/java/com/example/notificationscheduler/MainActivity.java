@@ -8,7 +8,9 @@ import android.content.ComponentName;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,17 +19,42 @@ public class MainActivity extends AppCompatActivity {
     private Switch mDeviceChargingSwitch;
     private JobScheduler mScheduler;
     private static final int JOB_ID = 0;
+    //Override deadline seekbar
+    private SeekBar mSeekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final TextView seekBarProgress = findViewById(R.id.seekBarProgress);
+        mSeekBar = findViewById(R.id.seekBar);
         mDeviceIdleSwitch = findViewById(R.id.idleSwitch);
         mDeviceChargingSwitch = findViewById(R.id.chargingSwitch);
+
+
+
+        mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                if (i > 0){
+                    seekBarProgress.setText(i + " s");
+                }else {
+                    seekBarProgress.setText("Not Set");
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {}
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {}
+        });
     }
 
     public void scheduleJob(View view) {
+        int seekBarInteger = mSeekBar.getProgress();
+        boolean seekBarSet = seekBarInteger > 0;
         RadioGroup networkOptions = findViewById(R.id.networkOptions);
         int selectedNetworkID = networkOptions.getCheckedRadioButtonId();
         mScheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
@@ -50,10 +77,14 @@ public class MainActivity extends AppCompatActivity {
         JobInfo.Builder builder = new JobInfo.Builder(JOB_ID, serviceName);
         builder.setRequiredNetworkType(selectedNetworkOption).setRequiresDeviceIdle(mDeviceIdleSwitch.isChecked())
                 .setRequiresCharging(mDeviceChargingSwitch.isChecked());
+        if (seekBarSet) {
+            builder.setOverrideDeadline(seekBarInteger * 1000);
+        }
 
 
-        boolean constraintSet = (selectedNetworkOption != JobInfo.NETWORK_TYPE_NONE)
-                || mDeviceChargingSwitch.isChecked() || mDeviceIdleSwitch.isChecked();
+        boolean constraintSet = selectedNetworkOption != JobInfo.NETWORK_TYPE_NONE
+                || mDeviceChargingSwitch.isChecked() || mDeviceIdleSwitch.isChecked()
+                || seekBarSet;
 
         if (constraintSet) {
             //Schedule the job and notify the user
