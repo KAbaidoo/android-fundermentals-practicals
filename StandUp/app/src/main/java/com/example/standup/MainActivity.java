@@ -19,7 +19,6 @@ import android.widget.ToggleButton;
 public class MainActivity extends AppCompatActivity {
     private ToggleButton alarmToggle;
     private NotificationManager mNotificationManager;
-
     private static final int NOTIFICATION_ID = 0;
     private static final String PRIMARY_CHANNEL_ID =
             "primary_notification_channel";
@@ -30,20 +29,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        alarmToggle = (ToggleButton) findViewById(R.id.alarmToggle);
+
+
+
 //        create pending intent
         Intent notifyIntent = new Intent(this, AlarmReceiver.class);
+
+
+        //Check if pending intent already exists
+        boolean alarmUp = (PendingIntent.getBroadcast(this, NOTIFICATION_ID, notifyIntent,
+                PendingIntent.FLAG_NO_CREATE) != null);
+
+        alarmToggle.setChecked(alarmUp);
         PendingIntent notifyPendingIntent = PendingIntent.getBroadcast
                 (this, NOTIFICATION_ID, notifyIntent, PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
 
 
-
 //        Initialize notification manager
         mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
 
-        alarmToggle = (ToggleButton) findViewById(R.id.alarmToggle);
         alarmToggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -59,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
                                 (AlarmManager.ELAPSED_REALTIME_WAKEUP,
                                         triggerTime, repeatInterval, notifyPendingIntent);
                     }
-
                     //Set the toast message for the "on" case.
                     toastMessage = getString(R.string.alarm_on_toast);
                 } else {
@@ -77,23 +83,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         createNotificationChannel();
-    }
-    private void deliverNotification(Context context) {
-        Intent contentIntent = new Intent(context, MainActivity.class);
-        PendingIntent contentPendingIntent = PendingIntent.getActivity
-                (context, NOTIFICATION_ID, contentIntent,  PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, PRIMARY_CHANNEL_ID)
-                .setSmallIcon(R.drawable.ic_stand_up)
-                .setContentTitle("Stand Up Alert")
-                .setContentText("You should stand up and walk around now!")
-                .setContentIntent(contentPendingIntent)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
-                .setAutoCancel(true)
-                .setDefaults(NotificationCompat.DEFAULT_ALL);
-
-        mNotificationManager.notify(NOTIFICATION_ID, builder.build());
     }
+
     /**
      * Creates a Notification channel, for OREO and higher.
      */
