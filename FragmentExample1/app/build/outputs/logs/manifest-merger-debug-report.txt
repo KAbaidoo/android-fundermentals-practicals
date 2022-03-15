@@ -1,0 +1,139 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:1-37:12
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:1-37:12
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:1-37:12
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:1-37:12
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\7b2dbb688c937054aebe62574c96d1e0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\63030c2ac1c8a73c384593684ea7cef3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\166d78e5fb2b2bad957b41a3327a5cc1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9aeec52623c3681b558cc58cfbc21260\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.1.aar\e8f59d2fb9d95974f7599b76bd189899\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.1.aar\82448021ee2e6b52d4ab0c0fe74dea90\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.1.aar\d76374c4de2b358d544d7effe36ffc28\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.1.aar\f545b3b0344832f1bc2366faa6666367\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.1.aar\6e4eda7ecb48b625b0d030e351c19554\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.1.aar\c5db6dc67dcbaffaa3b77a4732a0c4b7\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:1-37:12
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:1-37:12
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:1-37:12
+	package
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:19:5-50
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:1-37:12
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:1-37:12
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:18:11-69
+application
+ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:21:5-35:19
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\7b2dbb688c937054aebe62574c96d1e0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\7b2dbb688c937054aebe62574c96d1e0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\63030c2ac1c8a73c384593684ea7cef3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\63030c2ac1c8a73c384593684ea7cef3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\166d78e5fb2b2bad957b41a3327a5cc1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\166d78e5fb2b2bad957b41a3327a5cc1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9aeec52623c3681b558cc58cfbc21260\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9aeec52623c3681b558cc58cfbc21260\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.1.aar\e8f59d2fb9d95974f7599b76bd189899\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.1.aar\e8f59d2fb9d95974f7599b76bd189899\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.1.aar\82448021ee2e6b52d4ab0c0fe74dea90\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.1.aar\82448021ee2e6b52d4ab0c0fe74dea90\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.1.aar\d76374c4de2b358d544d7effe36ffc28\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.1.aar\d76374c4de2b358d544d7effe36ffc28\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.1.aar\f545b3b0344832f1bc2366faa6666367\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.1.aar\f545b3b0344832f1bc2366faa6666367\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.1.aar\6e4eda7ecb48b625b0d030e351c19554\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.1.aar\6e4eda7ecb48b625b0d030e351c19554\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.1.aar\c5db6dc67dcbaffaa3b77a4732a0c4b7\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.1.aar\c5db6dc67dcbaffaa3b77a4732a0c4b7\AndroidManifest.xml:25:5-29:19
+	android:supportsRtl
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:26:9-35
+	android:label
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:24:9-41
+	android:roundIcon
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:25:9-54
+	android:icon
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:23:9-43
+	android:allowBackup
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:22:9-35
+	android:theme
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:27:9-40
+activity#com.example.android.fragmentexample.MainActivity
+ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:28:9-34:20
+	android:name
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:28:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:29:13-33:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml:32:27-74
+uses-sdk
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\7b2dbb688c937054aebe62574c96d1e0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\7b2dbb688c937054aebe62574c96d1e0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\63030c2ac1c8a73c384593684ea7cef3\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\63030c2ac1c8a73c384593684ea7cef3\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\166d78e5fb2b2bad957b41a3327a5cc1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\166d78e5fb2b2bad957b41a3327a5cc1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9aeec52623c3681b558cc58cfbc21260\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\9aeec52623c3681b558cc58cfbc21260\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.1.aar\e8f59d2fb9d95974f7599b76bd189899\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.1.aar\e8f59d2fb9d95974f7599b76bd189899\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.1.aar\82448021ee2e6b52d4ab0c0fe74dea90\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.1.aar\82448021ee2e6b52d4ab0c0fe74dea90\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.1.aar\d76374c4de2b358d544d7effe36ffc28\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.1.aar\d76374c4de2b358d544d7effe36ffc28\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.1.aar\f545b3b0344832f1bc2366faa6666367\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.1.aar\f545b3b0344832f1bc2366faa6666367\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.1.aar\6e4eda7ecb48b625b0d030e351c19554\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.1.aar\6e4eda7ecb48b625b0d030e351c19554\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.1.aar\c5db6dc67dcbaffaa3b77a4732a0c4b7\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.1.aar\c5db6dc67dcbaffaa3b77a4732a0c4b7\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\7b2dbb688c937054aebe62574c96d1e0\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kobby\AndroidStudioProjects\Codelabs\FragmentExample1\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\7b2dbb688c937054aebe62574c96d1e0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\63030c2ac1c8a73c384593684ea7cef3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\63030c2ac1c8a73c384593684ea7cef3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\166d78e5fb2b2bad957b41a3327a5cc1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\166d78e5fb2b2bad957b41a3327a5cc1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.1.aar\e8f59d2fb9d95974f7599b76bd189899\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.1.aar\e8f59d2fb9d95974f7599b76bd189899\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.1.aar\82448021ee2e6b52d4ab0c0fe74dea90\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.1.aar\82448021ee2e6b52d4ab0c0fe74dea90\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.1.aar\d76374c4de2b358d544d7effe36ffc28\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.1.aar\d76374c4de2b358d544d7effe36ffc28\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.1.aar\f545b3b0344832f1bc2366faa6666367\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.1.aar\f545b3b0344832f1bc2366faa6666367\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.1.aar\6e4eda7ecb48b625b0d030e351c19554\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.1.aar\6e4eda7ecb48b625b0d030e351c19554\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.1.aar\c5db6dc67dcbaffaa3b77a4732a0c4b7\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.1.aar\c5db6dc67dcbaffaa3b77a4732a0c4b7\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\7b2dbb688c937054aebe62574c96d1e0\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Kobby\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\7b2dbb688c937054aebe62574c96d1e0\AndroidManifest.xml:27:13-51
